@@ -27,7 +27,7 @@ const AddNote = ({viewText}) => {
     }
 
     return (
-        <div className={`note new ${shake ? 'shake' : ''}`}>
+        <div className={`note new ${shake && 'shake'}`}>
             <textarea name="" id="" cols="10" rows="8" placeholder="Type to add a note..." value={addText} onChange={changeText}></textarea>
             <div className="note-footer">
                 <small>{charLeft} Remaining</small>

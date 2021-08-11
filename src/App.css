@@ -1,13 +1,24 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App{
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  min-height: 100vh;
 }
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.dark-mode{
+  background: black;
+}
+.dark-mode h1{
+  color: white;
 }
 input{
   width: 100%;
@@ -74,4 +85,10 @@ textarea{
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media screen and (max-width: 600px) {
+  .App{
+    padding: 5px;
+  }
 }
