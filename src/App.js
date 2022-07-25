@@ -62,7 +62,7 @@ function App() {
 				{dark ? <button className="save" onClick={darkMode}>Light</button> : <button className="save" onClick={darkMode}>Dark</button>}
 			</div>
 			<input type="search" name="" id="" placeholder="Search for notes..." onChange={(e) => setSearch(e.target.value)}/>
-			<NotesList notes={notes.filter((note) => note.text.toLowerCase().includes(search))} setNotes={setNotes} viewText={viewText}/>
+			<NotesList notes={notes.filter((note) => note.text.toLowerCase().includes(search))} setNotes={setNotes} viewText={viewText} search={search}/>
     	</div>
 	  </div>
   );
